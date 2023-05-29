@@ -11,7 +11,7 @@ import { useAppDispatch } from '../../store/hook';
 // saga
 import { requestBaseRequest } from '../../store/reducers/baseRequest/baseRequest.slice';
 import { selectBaseRequest } from '@/store/reducers/baseRequest/baseRequest.selector';
-
+const a = '';
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
