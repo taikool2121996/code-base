@@ -9,7 +9,7 @@
     "lint": "next lint:es && yarn lint:style",
     "lint:es": "eslint . --ext ts,tsx,js",
     "lint:style": "stylelint \"src/**/styled.ts\" \"src/**/*.tsx\" \"src/**/*.scss\"",
-    "prepare": "husky install",
+    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install",
     "test": "jest"
   },
   "lint-staged": {
