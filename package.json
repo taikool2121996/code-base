@@ -9,7 +9,7 @@
     "lint": "next lint:es && yarn lint:style",
     "lint:es": "eslint . --ext ts,tsx,js",
     "lint:style": "stylelint \"src/**/styled.ts\" \"src/**/*.tsx\" \"src/**/*.scss\"",
-    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install",
+    "prepare": "husky install",
     "test": "jest"
   },
   "lint-staged": {
@@ -57,7 +57,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^4.3.8",
+    "husky": "^8.0.3",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.2.0",
