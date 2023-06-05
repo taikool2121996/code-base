@@ -15,7 +15,7 @@ import { selectBaseRequest } from '@/store/reducers/baseRequest/baseRequest.sele
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(requestBaseRequest());
+    dispatch(requestBaseRequest({ country: 'United State' }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
