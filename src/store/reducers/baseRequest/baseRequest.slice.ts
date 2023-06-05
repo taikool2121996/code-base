@@ -1,22 +1,27 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { initialState } from './baseRequest.initialState';
 
 const baseRequestSlice = createSlice({
   name: 'baseRequest',
   initialState,
   reducers: {
-    requestBaseRequest(state) {
+    requestBaseRequest(
+      state,
+      {}: PayloadAction<{
+        country: string;
+      }>,
+    ) {
       state.error = null;
       state.isFetching = true;
     },
 
-    requestBaseRequestSuccess(state, { payload }) {
+    requestBaseRequestSuccessful(state, { payload }) {
       state.data = payload;
       state.error = null;
       state.isFetching = false;
     },
 
-    rrequestBaseRequestFail(state, { payload }) {
+    rrequestBaseRequestFailed(state, { payload }) {
       const { error } = payload;
       state.error = error;
       state.isFetching = false;
@@ -26,8 +31,8 @@ const baseRequestSlice = createSlice({
 
 export const {
   requestBaseRequest,
-  requestBaseRequestSuccess,
-  rrequestBaseRequestFail,
+  requestBaseRequestSuccessful,
+  rrequestBaseRequestFailed,
 } = baseRequestSlice.actions;
 
 export default baseRequestSlice.reducer;

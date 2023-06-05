@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import CustomHeader from '@/Components/CustomHeader';
+import CustomHeader from '@/components/CustomHeader';
 
 describe('Custom Navbar', () => {
   test('Navbar should have logo', () => {
