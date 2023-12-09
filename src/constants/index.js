@@ -13,6 +13,6 @@ export const navLinks = [
   },
   {
     id: 'husky_deploy',
-    title: 'Test CICD',
+    title: 'Test CICD ne',
   },
 ];
