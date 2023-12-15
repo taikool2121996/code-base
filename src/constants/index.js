@@ -11,8 +11,4 @@ export const navLinks = [
     id: 'aboutUs',
     title: 'About us',
   },
-  {
-    id: 'husky_deploy',
-    title: 'Test CICD ne',
-  },
 ];
