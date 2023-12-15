@@ -10,5 +10,5 @@ export const navLinks = [
   {
     id: 'aboutUs',
     title: 'About us',
-  },
+  },``
 ];
